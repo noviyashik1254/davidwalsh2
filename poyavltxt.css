@@ -1,0 +1,25 @@
+.container { 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  text-align: center;
+}
+.fade-in {
+    opacity: 0; /* начальное значение непрозрачности */
+    animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 6s; /* длительность анимации в 1 секунду */
+  }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
